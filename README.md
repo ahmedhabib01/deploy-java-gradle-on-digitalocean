@@ -1,22 +1,58 @@
-# Deploy Java Gradle App on DigitalOcean
+# Java Gradle Application
 
+This project demonstrates how to create, build, and run a Java application using **Gradle**.  
+It focuses on understanding Java project structure, Gradle build lifecycle, and basic build automation.
 
-This project demonstrates how to provision a Linux server on DigitalOcean and deploy a Java application built with Gradle.
+This project was developed using a cloud-based development environment (GitHub Codespaces) to avoid local system limitations.
 
+---
 
 ## Tech Stack
-- DigitalOcean
-- Ubuntu Linux
-- Java 17
+
+- Java
+- Gradle
+- Git & GitHub
+
+---
+
+## What This Project Demonstrates
+
+- Java application structure
+- Gradle project initialization
+- Gradle tasks (`build`, `run`)
+- Build automation concepts
+- Running Java apps from the command line
+- Cloud-based development workflow
+
+---
+
+## Project Structure
+
+.
+├── app/
+│ ├── build.gradle
+│ ├── settings.gradle
+│ └── src/
+│ └── main/
+│ └── java/
+│ └── com/example/app/
+│ └── Main.java
+└── README.md
+
+
+---
+
+## How to Run the Project
+
+### Prerequisites
+- Java 17+ (or compatible)
 - Gradle
 
+### Run the application
 
-## Application
-A simple Java HTTP server running on port 8080.
+```bash
+gradle run
 
+You should see:
 
-## High-Level Steps
-1. Create and secure a DigitalOcean Droplet
-2. Configure a non-root Linux user
-3. Build Java app using Gradle
-4. Deploy and run app on the server
+Hello World!
